@@ -114,6 +114,8 @@ main(int argc, char *argv[])
 		snoop_legacy(DefaultRootWindow(dpy));
 	}
 
+	hide_cursor();
+
 	for (;;) {
 		cookie = &e.xcookie;
 		XNextEvent(dpy, &e);
